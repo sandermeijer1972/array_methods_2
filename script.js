@@ -52,7 +52,27 @@ console.log(isItalyInTheGreat7(arrayCountries));
 
 //deel E
 
-const arrayTenTimes = [1, 4, 3, 6, 9, 7, 11];
+const arrayTenTimes = [1,4,3,6,9,7,11];
+const multiplyTenTimesValues = function(array) {
+    let multipliedArray = [];
+    array.forEach(number => {
+      multipliedArray.push(number * 10);
+    });
+    return multipliedArray;
+  };
+
+console.log(multiplyTenTimesValues(arrayTenTimes));
+
+//deel F
+const under100Array = [1, 81, 4, 53, 3, 6, 79, 2, 43, 7, 28, 11, 101, 77, 84, 98 ];
+
+function isSmallerThan100(i) {
+    return i < 100;
+};
+console.log(under100Array.every(isSmallerThan100)); // false
+
+
+
 
 
 
