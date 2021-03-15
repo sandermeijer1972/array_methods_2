@@ -1,0 +1,60 @@
+const superheroes = [
+    {name: "Batman", alter_ego: "Bruce Wayne"}, 
+    {name: "Superman", alter_ego: "Clark Kent"}, 
+    {name: "Spiderman", alter_ego: "Peter Parker"}]
+ 
+const findSpiderMan = function(superheroes) {
+    return superheroes.find(function(superhero) {
+        return superhero.name === "Spiderman";
+    });
+};
+
+//console.log("Find Spiderman:", findSpiderMan(superheroes)); 
+console.log(findSpiderMan(superheroes)) 
+    // Find Spiderman
+    // result should be: {name: "Spiderman", alter_ego: "Peter Parker"}
+
+// deel B
+
+const doubleArrayValues = function(array) {
+    let newArray = [];
+    array.forEach(number => {
+      newArray.push(number * 2);
+    });
+    return newArray;
+  };
+
+console.log(doubleArrayValues([1,2,3]));
+
+
+// deel C
+
+const array1 = [1, 4, 3, 6, 9, 7, 11];
+// result should be true
+const array2 = [1,2,1,2,1,2];
+// result should be false
+
+function isBiggerThan10(i) {
+    return i > 10;
+  };
+  
+console.log(array1.some(isBiggerThan10)); // true
+console.log(array2.some(isBiggerThan10)); // false
+
+//deel D
+const arrayCountries = ['Canada', 'France','Germany','Italy','Japan','United Kingdom','United States'];
+
+function isItalyInTheGreat7(country) {
+    return country.includes('Italy');
+};
+
+console.log(isItalyInTheGreat7(arrayCountries));
+
+//deel E
+
+const arrayTenTimes = [1, 4, 3, 6, 9, 7, 11];
+
+
+
+
+
