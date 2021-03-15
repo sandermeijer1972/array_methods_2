@@ -71,6 +71,14 @@ function isSmallerThan100(i) {
 };
 console.log(under100Array.every(isSmallerThan100)); // false
 
+//deel G
+const totalSumArray = [1, 81, 4, 53, 3, 6, 79, 2, 43, 7, 28, 11, 77, 84, 98, 101, 206, 234];
+
+const sum = totalSumArray.reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue
+  }, 0);
+
+console.log(sum);
 
 
 
